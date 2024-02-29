@@ -5,7 +5,7 @@ Resource                  ../resources/keywords/kws_apiautomation.robot
 Suite Setup              Conectar a minha API
 
 
-*** Test Case ***
+*** Test Cases ***
 Cenario: Buscar a listagem de todos os livros (GET em todos os livros)
     [Tags]            TESTE_1     API
     Requisitar todos os livros

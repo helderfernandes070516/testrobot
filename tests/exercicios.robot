@@ -79,20 +79,20 @@ Cenario: Estou no número FOR
 Somar dois números
     [Arguments]   ${NUM_A}      ${NUM_B}
     ${SOMA}       Evaluate      ${NUM_A}+${NUM_B}
-    [Return]      ${SOMA}
+    RETURN      ${SOMA}
 
 Somar dois números "${NUM_A}" e "${NUM_B}"
     ${SOMA}       Evaluate      ${NUM_A}+${NUM_B}
-    [Return]      ${SOMA}
+    RETURN      ${SOMA}
 
 Criar e-mail concatenado
     [Arguments]     ${NOME}     ${SOBRENOME}    ${IDADE}
     ${EMAIL}        Catenate    SEPARATOR=_     ${NOME}     ${SOBRENOME}    ${IDADE}@robot.com
-    [Return]        ${EMAIL}
+    RETURN        ${EMAIL}
 
 Criar e-mail concatenado "${NOME}", "${SOBRENOME}" e "${IDADE}"
     ${EMAIL}        Catenate    SEPARATOR=_     ${NOME}     ${SOBRENOME}    ${IDADE}@robot.com
-    [Return]        ${EMAIL}
+    RETURN        ${EMAIL}
 
 Contador usando o For
     [Arguments]     ${INIT}     ${FINISH}
@@ -112,18 +112,3 @@ Imprimir nome do países
     FOR     ${país}     IN      @{PAÍSES}
         Log To Console      Estou no seguinte país: ${país}
     END
-
-
-    
-
-Open browser
-
-siandoains
-
-asdapsidna
-
-aopsjdpainsd
-
-painsdpias
-
-close browser
