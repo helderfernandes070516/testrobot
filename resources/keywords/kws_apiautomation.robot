@@ -22,7 +22,7 @@ Conectar a minha API
     Set Suite Variable  ${HEADERS}
 
 Requisitar todos os livros
-    ${RESPOSTA}         Get On Session    fakeAPI    Books    expected_status=any
+    ${RESPOSTA}         GET On Session    fakeAPI    Books    expected_status=any
     Log                 ${RESPOSTA.text}
     Set Test Variable   ${RESPOSTA}
 
@@ -30,7 +30,7 @@ Requisitar o livro "${ID_LIVRO}"
     Create Session      fakeAPI     ${BASE_URL}     disable_warnings=${True}
     ${HEADERS}          Create Dictionary       content-type=application/json
     Set Suite Variable  ${HEADERS}
-    ${RESPOSTA}         Get On Session    fakeAPI    Books/${ID_LIVRO}    expected_status=any
+    ${RESPOSTA}         GET On Session    fakeAPI    Books/${ID_LIVRO}    expected_status=any
     Log                 ${RESPOSTA.text}
     Set Test Variable   ${RESPOSTA}
 
@@ -56,7 +56,7 @@ Conferir se retorna uma lista com "${QTDE_LIVROS}" livros
 
 Cadastrar um novo livro
     Set Suite Variable          ${JSON_BODY}        ${JSON_POST}
-    ${RESPOSTA}         Post On Session     fakeAPI     Books
+    ${RESPOSTA}         POST On Session     fakeAPI     Books
     ...                 json=${JSON_BODY}
     ...                 headers=${HEADERS}      expected_status=any
     Log To Console      ${RESPOSTA.text}
