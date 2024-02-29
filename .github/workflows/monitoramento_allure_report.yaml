@@ -54,7 +54,7 @@ jobs:
       continue-on-error: true
 
       run: |
-        robot -d ./results --listener 'allure_robotframework:/allure-results/' -i API tests
+        robot -d ./results --listener 'allure_robotframework:./allure-results/' -i API tests
         ls allure-results
 
     - name: Upload Tests Results
