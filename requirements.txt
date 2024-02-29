@@ -1,0 +1,29 @@
+#################################################
+#   pip install -r requirements.txt             #               
+#   https://chromedriver.chromium.org/downloads #
+# ###############################################
+Appium-Python-Client
+allure-robotframework
+allure-pytest
+decorator==4.4.2
+docutils==0.16
+Faker
+slacker
+kitchen==1.2.6
+python-dateutil==2.8.1
+robotframework
+robotframework-appiumlibrary==2.0.0
+robotframework-requests==0.7.2
+robotframework-faker==5.0.0
+robotframework-seleniumlibrary==5.1.3
+robotframework-pabot
+selenium
+six==1.15.0
+text-unidecode==1.3
+urllib3==1.26.18
+wrapt==1.12.1
+lxml
+pyyaml
+beautifulsoup4
+requests
+collection
