@@ -77,7 +77,6 @@ jobs:
       uses: joonvena/robotFramework-reporter-action@v2.3
       with:
         report_path: results
-        gh_access_token: ${{secrets.TOKEN_GITHUB}}
         show_passed_tests: false
 
     - name: Get Allure history
@@ -85,8 +84,8 @@ jobs:
       if: always()
       continue-on-error: true
       with:
-        ref: gh-pages
-        path: gh-pages
+        ref: main
+        path: main
 
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
@@ -94,7 +93,7 @@ jobs:
       id: allure-report
       with:
         allure_results: allure-results
-        gh_pages: gh-pages
+        gh_pages: main
         allure_report: allure-report
         allure_history: allure-history
 
@@ -103,5 +102,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v2
       env:
         PERSONAL_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-        PUBLISH_BRANCH: gh-pages
+        PUBLISH_BRANCH: main
         PUBLISH_DIR: allure-history
