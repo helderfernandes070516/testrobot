@@ -29,7 +29,7 @@ env:
 jobs:
   test:
     name: Robot + Appium + BrowserStack - Produção
-    runs-on: ["vs-venda-direta"]
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version: [3.9]
