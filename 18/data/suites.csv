@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Feb 29 20:07:06 GMT 2024","Thu Feb 29 20:07:06 GMT 2024","4","","Tests","Apiautomation","","","Cenario: Buscar a listagem de todos os livros (GET em todos os livros)",""
+"failed","Thu Feb 29 20:07:06 GMT 2024","Thu Feb 29 20:07:06 GMT 2024","6","","Tests","Apiautomation","","","Cenario: Buscar um livro específico(GET em um Livro específico)",""
+"failed","Thu Feb 29 20:07:06 GMT 2024","Thu Feb 29 20:07:06 GMT 2024","6","","Tests","Apiautomation","","","Cenario: Cadastrar um novo livro (POST)",""
