@@ -7,7 +7,7 @@ Test Setup              Abrir o aplicativo
 Test Teardown           Fechar o aplicativo
 
 
-*** Test Case ***
+*** Test Cases ***
 Cenário: Abrindo o youtube
     Dado que eu esteja na tela home
     E pesquisa um vídeo do robot

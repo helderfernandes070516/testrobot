@@ -7,7 +7,7 @@ Resource                ../resources/keywords/kws_automation.robot
 Test Setup              Abrir o navegador    
 Test Teardown           Fechar o navegador
 
-*** Test Case ***
+*** Test Cases ***
 Caso de Teste 01: Pesquisar produto existente
     Acessar a página home do site Automation Practice
     Digitar o nome do produto "Blouse" no campo de pesquisa
